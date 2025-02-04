@@ -43,7 +43,7 @@ function App() {
 
   return (
     <TodoProvider value={{tasks,addTask,editTask,deleteTask,toggleComplete}}>
-      <div className="w-full bg-gradient-to-r from-slate-600 to-stone-900')]
+      <div className="w-full bg-gradient-to-r from-slate-900 to-slate-700
                    min-h-screen   py-8">
                 <div className="w-full max-w-2xl mx-auto rounded-lg px-4 py-3 text-white">
                     <h1 className="text-3xl  text-center mb-8 mt-2 text-amber-300 underline font-primary ">ToDo+</h1>
