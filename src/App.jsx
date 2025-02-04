@@ -43,7 +43,7 @@ function App() {
 
   return (
     <TodoProvider value={{tasks,addTask,editTask,deleteTask,toggleComplete}}>
-      <div className="w-full bg-[url('https://img.freepik.com/free-photo/black-elegant-background-with-copy-space_24972-1836.jpg?t=st=1738649243~exp=1738652843~hmac=aacadc9d2fe6c7e970f0e03650497e014753ef48a5c48f46edab8b867e71feab&w=1060')]
+      <div className="w-full bg-gradient-to-r from-slate-600 to-stone-900')]
                    min-h-screen   py-8">
                 <div className="w-full max-w-2xl mx-auto rounded-lg px-4 py-3 text-white">
                     <h1 className="text-3xl  text-center mb-8 mt-2 text-amber-300 underline font-primary ">ToDo+</h1>
