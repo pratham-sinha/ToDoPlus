@@ -33,7 +33,7 @@ function TodoItem({ task }) {
     return (
         <div
             className={`flex border relative border-black rounded-lg px-3 py-1.5 gap-x-3 shadow-sm shadow-white/50 duration-300 ${
-                task.completed ? " bg-[#3d3939] "  : "bg-[#000000]"
+                task.completed ? " bg-[#48524b] "  : "bg-[#000000]"
             }`}
         >
             <input
@@ -54,9 +54,12 @@ function TodoItem({ task }) {
 
 
             {showEmoji && (
-            <div className="w-10 bg-transparent h-10 absolute top-7 left-125 transform -translate-y-1/2 text-2xl animate-bounce">
+            <div className="absolute top-7 right-23 transform -translate-y-1/2 text-2xl animate-bounce">
             🥳
-            </div>
+        </div>
+        
+        
+        
             )}
           
             {/* Edit, Save Button */}
