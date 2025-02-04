@@ -17,11 +17,14 @@ function TodoItem({ task }) {
         toggleComplete(task.id)
         handleCheckboxClick()
     }
-
+    const emojis = ["🎉", "👍", "🔥", "💯", "👏", "🎊", "💖","😍","🥳","😎","✌","🤌"];
     const [showEmoji,setShowEmoji]=useState(false)
+    const [randomEmoji, setRandomEmoji] = useState("");
 
     const handleCheckboxClick = () => {
         if(!task.completed){
+        const randomIndex = Math.floor(Math.random() * emojis.length);
+        setRandomEmoji(emojis[randomIndex])
         setShowEmoji(true);
         setTimeout(() => setShowEmoji(false), 1000);
         }
@@ -55,7 +58,7 @@ function TodoItem({ task }) {
 
             {showEmoji && (
             <div className="absolute top-7 right-23 transform -translate-y-1/2 text-2xl animate-bounce">
-            🥳
+            {randomEmoji}
         </div>
         
         
