@@ -17,7 +17,7 @@ function TodoItem({ task }) {
         toggleComplete(task.id)
         handleCheckboxClick()
     }
-    const emojis = ["🎉", "👍", "🔥", "💯", "👏", "🎊", "💖","😍","🥳","😎","✌","🤌"];
+    const emojis = ["🎉", "👍", "🔥", "💯", "👏", "🎊","🥳","😎","✌","🤌"];
     const [showEmoji,setShowEmoji]=useState(false)
     const [randomEmoji, setRandomEmoji] = useState("");
 
